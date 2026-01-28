@@ -3,30 +3,40 @@ body {
   color: #222;
 }
 
-.emoji {
-  border: 1px solid #222;
-  border-radius: 8px;
+.emoji { /* Article Card Contents */
+  display: flex; /* Organizes article card contents into flexbox */
+  flex-direction: column; /* Organizes article card contents vertically (flexbox) */
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #222; /* Add black border to article card */
+  border-radius: 8px; /* border radius adds additional empty space to adjust content in its parent tag */
   padding: 1rem;
 }
 
-.emoji h2 {
+.emoji h1 { /* Header Title */
+  margin: 1rem;
+}
+
+.emoji h2 { /* Article Card Title */
   margin: 0;
   border-bottom: 2px solid #ccc;
 }
 
-.emoji a {
+.emoji a { /* The purple button */
   text-decoration: none;
   background-color: #781BAA;
   color: white;
   padding: 1rem;
   border-radius: 8px;
+  margin-top: auto; /* Moves button to bottom in the same spot of each card */
 }
 
 .icon {
   font-size: 4rem;
+  text-align: center; /* Centers emojis to the center of the card */
 }
 
-.emojis {
+.emojis { /* Article Card Grid Setup */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
@@ -34,3 +44,4 @@ body {
   margin: 0 auto;
   padding: 1rem;
 }
+
